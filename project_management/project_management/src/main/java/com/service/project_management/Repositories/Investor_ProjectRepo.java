@@ -1,8 +1,6 @@
-package com.projectmanagement.demo.Repositories;
+package com.service.project_management.Repositories;
 
-import com.projectmanagement.demo.Entities.Investor;
-import com.projectmanagement.demo.Entities.Investor_Project;
-import com.projectmanagement.demo.Entities.Project;
+import com.service.project_management.Entities.Investor_Project;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

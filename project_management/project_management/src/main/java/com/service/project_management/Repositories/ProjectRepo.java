@@ -1,17 +1,18 @@
-package com.projectmanagement.demo.Repositories;
+package com.service.project_management.Repositories;
 
-import com.projectmanagement.demo.Entities.Investor;
-import com.projectmanagement.demo.Entities.Investor_Project;
-import com.projectmanagement.demo.Entities.Project;
+import com.service.project_management.Entities.Investor_Project;
+import com.service.project_management.Entities.Project;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
-import java.util.List;
+import java.util.Optional;
 
 public interface ProjectRepo extends JpaRepository<Project,Integer> {
 
 
-
-//    List<Project> findByInvestorProject(Investor_Project investorProject);
+    @Query(value = "select * from project where project_location_id= l_id",nativeQuery = true)
+    Optional<Project> findProjectByLocation(@Param("l_id")Integer locationId);
 
 
 

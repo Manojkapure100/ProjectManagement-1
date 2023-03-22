@@ -1,4 +1,4 @@
-package com.projectmanagement.demo.Entities;
+package com.service.project_management.Entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
@@ -7,7 +7,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.xml.stream.Location;
 import java.io.Serializable;
 import java.util.Date;
 

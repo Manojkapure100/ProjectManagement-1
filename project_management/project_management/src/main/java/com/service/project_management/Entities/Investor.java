@@ -1,4 +1,4 @@
-package com.projectmanagement.demo.Entities;
+package com.service.project_management.Entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
@@ -8,8 +8,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.io.Serializable;
-import java.util.List;
-import java.util.SplittableRandom;
 
 @Getter
 @Setter

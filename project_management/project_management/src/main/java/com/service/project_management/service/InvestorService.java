@@ -1,20 +1,14 @@
-package com.projectmanagement.demo.service;
+package com.service.project_management.service;
 
-import com.projectmanagement.demo.Dto.ProjectDto;
-import com.projectmanagement.demo.Dto.ProjectInvestorDto;
-import com.projectmanagement.demo.Entities.Investor;
-import com.projectmanagement.demo.Entities.Investor_Project;
-import com.projectmanagement.demo.Entities.Project;
-import com.projectmanagement.demo.Repositories.InvestorRepo;
-import com.projectmanagement.demo.Repositories.Investor_ProjectRepo;
-import com.projectmanagement.demo.Repositories.ProjectRepo;
+import com.service.project_management.Entities.Investor_Project;
+import com.service.project_management.Repositories.InvestorRepo;
+import com.service.project_management.Repositories.Investor_ProjectRepo;
+import com.service.project_management.Repositories.ProjectRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Service
 public class InvestorService {
