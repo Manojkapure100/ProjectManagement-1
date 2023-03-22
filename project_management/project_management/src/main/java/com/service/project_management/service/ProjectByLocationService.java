@@ -25,10 +25,12 @@ public class ProjectByLocationService {
     ProjectRepo projectRepo;
 
 
+
     public List<Project> getAllProjectwithLocation(Integer locationId) {
 
         List<Project> projectdetails = projectRepo.findProjectByLocation(locationId);
         return projectdetails;
     }
+
 
 }
